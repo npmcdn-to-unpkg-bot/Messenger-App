@@ -5,7 +5,7 @@ import {MessageService} from "./message.service";
 @Component({
     selector: "my-message-input",
     directives:[],
-    providers: [MessageService],
+    providers: [],
     template:`
             <section class="col-md-8 col-md-offset-2">
                 <div class="form-group">
