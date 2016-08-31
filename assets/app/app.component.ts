@@ -9,7 +9,7 @@ import {MessageInputComponent} from "./messages/message-input.component";
             <div class="row">
                 <my-message-input></my-message-input>
             </div>
-
+            <br>
             <div class="row">
                 <my-message-list></my-message-list>
             </div>
