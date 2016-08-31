@@ -1,5 +1,6 @@
-import {Component, Input} from "angular2/core";
+import {Component, Input, Output, EventEmitter} from "angular2/core";
 import {Message} from "./message";
+
 @Component({
     selector: 'my-message',
     template: `
@@ -12,7 +13,7 @@ import {Message} from "./message";
                     {{ message.username }}
                 </div>
                 <div class="config">
-                    <a>Edit</a>
+                    <a (click)="onClick()">Edit</a>
                     <a>Delete</a>
                 </div>
             </footer>
@@ -35,5 +36,9 @@ import {Message} from "./message";
 })
 export class MessageComponent {
     @Input() message: Message;
+    @Output() editClicked = new EventEmitter<string>();
 
+    onClick(){
+        this.editClicked.emit('Changed by Pulok')
+    }
 }
