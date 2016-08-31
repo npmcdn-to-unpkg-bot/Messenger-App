@@ -1,5 +1,6 @@
 import {Component, Input, Output, EventEmitter} from "angular2/core";
 import {Message} from "./message";
+import {MessageService} from "./message.service";
 
 @Component({
     selector: 'my-message',
@@ -13,8 +14,8 @@ import {Message} from "./message";
                     {{ message.username }}
                 </div>
                 <div class="config">
-                    <a (click)="onClick()">Edit</a>
-                    <a>Delete</a>
+                    <a (click)="onEdit()">Edit</a>
+                    <a (click)="onDelete()">Delete</a>
                 </div>
             </footer>
         </article>
@@ -38,7 +39,15 @@ export class MessageComponent {
     @Input() message: Message;
     @Output() editClicked = new EventEmitter<string>();
 
-    onClick(){
-        this.editClicked.emit('Changed by Pulok')
+    constructor (private _messageService: MessageService){}
+
+    onEdit(){
+        this._messageService.editMessage(this.message);
     }
+
+    onDelete(){
+        this._messageService.deleteMessage(this.message);
+    }
+
+
 }
