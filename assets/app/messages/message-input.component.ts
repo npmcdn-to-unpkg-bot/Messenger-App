@@ -1,9 +1,11 @@
 import {Component} from "angular2/core";
 import {Message} from "./message";
+import {MessageService} from "./message.service";
 
 @Component({
     selector: "my-message-input",
     directives:[],
+    providers: [MessageService],
     template:`
             <section class="col-md-8 col-md-offset-2">
                 <div class="form-group">
@@ -27,8 +29,11 @@ import {Message} from "./message";
 
 
 export class MessageInputComponent{
+    constructor(private _messageService: MessageService){}
+
     onCreate(content: string){
         const message: Message = new Message(content, null, 'Dummy');
-        console.log(message);
+        // console.log(message);
+        this._messageService.addMessage(message);
     }
 }
