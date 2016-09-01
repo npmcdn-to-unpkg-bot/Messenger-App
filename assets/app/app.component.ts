@@ -23,7 +23,7 @@ import {AuthenticationComponent} from "./auth/authentication.component";
         component: BodyComponent,
         useAsDefault: true,
     },
-    {   path: '/auth',
+    {   path: '/auth/...',
         name: 'Auth',
         component: AuthenticationComponent,
     },

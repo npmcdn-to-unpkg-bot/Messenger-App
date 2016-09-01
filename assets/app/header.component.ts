@@ -27,7 +27,7 @@ import {ROUTER_DIRECTIVES} from "angular2/router";
             display: inline-block;
         }
         .router-link-active{
-            background-color: #337ab7;
+            background-color: lightgrey;
             color: black;
         }
 `],
