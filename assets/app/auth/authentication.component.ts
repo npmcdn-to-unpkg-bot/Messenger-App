@@ -1,6 +1,6 @@
 
 
-import {Component} from "angular2/src/core/metadata";
+import {Component} from 'angular2/core';
 @Component({
     selector: 'my-auth',
     template: `

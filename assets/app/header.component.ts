@@ -1,13 +1,16 @@
 
-import {Component} from "angular2/src/core/metadata";
+import {Component} from 'angular2/core';
+import {ROUTER_DIRECTIVES} from "angular2/router";
+
 @Component({
     selector: 'my-header',
+    directives: [ROUTER_DIRECTIVES],
     template: `
         <header class="row">
             <nav class="col-md-8 col-md-offset-2">
                 <ul class="nav nav-pills">
-                    <li><a href="#">Messages</a></li>
-                    <li><a href="#">Authentication</a></li>
+                    <li><a [routerLink]="['ShowMessages']">Show Messages</a></li>
+                    <li><a [routerLink]="['Auth']">Authentication</a></li>
                 </ul>
             </nav>
         </header>
@@ -22,6 +25,10 @@ import {Component} from "angular2/src/core/metadata";
         li{
             float: none;
             display: inline-block;
+        }
+        .router-link-active{
+            background-color: #337ab7;
+            color: black;
         }
 `],
 
