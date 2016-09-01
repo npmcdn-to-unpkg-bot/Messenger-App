@@ -1,7 +1,7 @@
 
 import {Component} from "angular2/src/core/metadata";
 import {OnInit} from "angular2/src/core/linker/interfaces";
-import {ControlGroup} from "angular2/src/common/forms/model";
+import {ControlGroup, Control} from "angular2/src/common/forms/model";
 import {FormBuilder} from "angular2/src/common/forms/form_builder";
 import {Validators} from "angular2/src/common/forms/validators";
 @Component({
@@ -60,9 +60,19 @@ export class SignupComponent implements OnInit{
         this.myForm = this._fb.group({
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
-            email: ['', Validators.required],
+            email: ['', Validators.compose([
+                Validators.required,
+                this.isEmail
+            ])],
             password: ['', Validators.required],
         })
+    }
+
+    private isEmail(control: Control): {[s: string]: boolean}{
+        if(!control.value.match("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"){
+            return {invalidEmail: true};
+        }
+
     }
 
 }
