@@ -1,21 +1,17 @@
 import {Component} from 'angular2/core';
-import {MessageListComponent} from "./messages/message-list.component";
-import {MessageInputComponent} from "./messages/message-input.component";
+import {HeaderComponent} from "./header.component";
+import {BodyComponent} from "./messages/body.component";
 
 @Component({
     selector: 'my-app',
     template: ` 
         <div class="container">
-            <div class="row">
-                <my-message-input></my-message-input>
-            </div>
-            <br>
-            <div class="row">
-                <my-message-list></my-message-list>
-            </div>
+            <my-header></my-header>
+            <my-body></my-body>
         </div>
+
     `,
-    directives: [MessageListComponent, MessageInputComponent]
+    directives: [HeaderComponent, BodyComponent]
 })
 
 export class AppComponent {
