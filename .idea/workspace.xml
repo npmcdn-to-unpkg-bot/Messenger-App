@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50741ba6-7776-43fd-b5c9-2ff7d2ad2728" name="Default" comment="Feat: Add custom email validator function">
+    <list default="true" id="50741ba6-7776-43fd-b5c9-2ff7d2ad2728" name="Default" comment="Feat: Add signin, signup, logout sub-routes in auth component">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/messages.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/app.component.ts" afterPath="$PROJECT_DIR$/assets/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/auth/authentication.component.ts" afterPath="$PROJECT_DIR$/assets/app/auth/authentication.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/auth/signin.component.ts" afterPath="$PROJECT_DIR$/assets/app/auth/signin.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/auth/signup.component.ts" afterPath="$PROJECT_DIR$/assets/app/auth/signup.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/header.component.ts" afterPath="$PROJECT_DIR$/assets/app/header.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/bundle.js" afterPath="$PROJECT_DIR$/public/js/app/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="beta.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authentication.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authentication.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/app/auth/authentication.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="220">
               <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="23" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -99,6 +95,26 @@
                 <marker date="1472769533517" expanded="true" signature="812:871" ph="..." />
                 <marker date="1472769533517" expanded="true" signature="917:1100" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/messages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,6 +146,8 @@
         <option value="$PROJECT_DIR$/assets/app/auth/signin.component.ts" />
         <option value="$PROJECT_DIR$/assets/app/auth/authentication.component.ts" />
         <option value="$PROJECT_DIR$/assets/app/header.component.ts" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/messages.js" />
       </list>
     </option>
   </component>
@@ -223,11 +241,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,7 +336,7 @@
       <workItem from="1472619157318" duration="4197000" />
       <workItem from="1472674329210" duration="16395000" />
       <workItem from="1472746715333" duration="33000" />
-      <workItem from="1472765414195" duration="4398000" />
+      <workItem from="1472765414195" duration="5870000" />
     </task>
     <task id="LOCAL-00001" summary="Add custom property binding and event binding to message content">
       <created>1472620510349</created>
@@ -422,11 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472767121422</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Feat: Add signin, signup, logout sub-routes in auth component">
+      <created>1472769854446</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1472769854446</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27988000" />
+    <option name="totallyTimeSpent" value="29460000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,7 +529,8 @@
     <MESSAGE value="Feat: Add user logout component definition" />
     <MESSAGE value="Feat: Add user signup component definition" />
     <MESSAGE value="Feat: Add custom email validator function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: Add custom email validator function" />
+    <MESSAGE value="Feat: Add signin, signup, logout sub-routes in auth component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: Add signin, signup, logout sub-routes in auth component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -522,7 +544,7 @@
         <state relative-caret-position="828">
           <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
           <folding>
-            <element signature="e#0#69#0" expanded="true" />
+            <element signature="e#0#69#0" expanded="false" />
             <marker date="1472682399060" expanded="true" signature="257:703" ph="..." />
             <marker date="1472682399060" expanded="true" signature="294:351" ph="..." />
             <marker date="1472682399060" expanded="true" signature="393:684" ph="..." />
@@ -638,7 +660,7 @@
         <state relative-caret-position="828">
           <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
           <folding>
-            <element signature="e#0#69#0" expanded="true" />
+            <element signature="e#0#69#0" expanded="false" />
             <marker date="1472682399060" expanded="true" signature="257:703" ph="..." />
             <marker date="1472682399060" expanded="true" signature="294:351" ph="..." />
             <marker date="1472682399060" expanded="true" signature="393:684" ph="..." />
@@ -754,7 +776,7 @@
         <state relative-caret-position="396">
           <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
-            <element signature="e#0#69#0" expanded="true" />
+            <element signature="e#0#69#0" expanded="false" />
             <marker date="1472682399060" expanded="true" signature="257:703" ph="..." />
             <marker date="1472682399060" expanded="true" signature="294:351" ph="..." />
             <marker date="1472682399060" expanded="true" signature="393:684" ph="..." />
@@ -782,7 +804,7 @@
         <state relative-caret-position="252">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding>
-            <element signature="e#0#69#0" expanded="true" />
+            <element signature="e#0#69#0" expanded="false" />
             <marker date="1472682399060" expanded="true" signature="257:703" ph="..." />
             <marker date="1472682399060" expanded="true" signature="294:351" ph="..." />
             <marker date="1472682399060" expanded="true" signature="393:684" ph="..." />
@@ -861,7 +883,7 @@
         <state relative-caret-position="828">
           <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
           <folding>
-            <element signature="e#0#69#0" expanded="true" />
+            <element signature="e#0#69#0" expanded="false" />
             <marker date="1472682399060" expanded="true" signature="257:703" ph="..." />
             <marker date="1472682399060" expanded="true" signature="294:351" ph="..." />
             <marker date="1472682399060" expanded="true" signature="393:684" ph="..." />
@@ -997,7 +1019,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/app/auth/authentication.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="220">
           <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="23" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -1007,6 +1029,22 @@
             <marker date="1472769533517" expanded="true" signature="812:871" ph="..." />
             <marker date="1472769533517" expanded="true" signature="917:1100" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
