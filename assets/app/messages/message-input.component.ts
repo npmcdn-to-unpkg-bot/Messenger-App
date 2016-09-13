@@ -33,6 +33,10 @@ export class MessageInputComponent{
 
     onSubmit(form: any){
         const message: Message = new Message(form.content, null, 'Dummy');
-        this._messageService.addMessage(message);
+        this._messageService.addMessage(message)
+            .subscribe(
+                data => console.log(data),
+                error => console.error(error)
+            );
     }
 }
