@@ -13,7 +13,7 @@ export class MessageService{
     addMessage(message: Message){
         const body = JSON.stringify(message);
         const headers = new Headers({'Content-Type' : 'application/json'});
-        return this._http.post('http://localhost:3000/message', body, {headers: headers})
+        return this._http.post('/message', body, {headers: headers})
             .map(res => res.json())
             .catch(error => Observable.throw(error.json()));
     }
